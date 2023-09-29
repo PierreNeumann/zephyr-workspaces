@@ -1,12 +1,13 @@
 # Copyright (c) 2023 Pierre Neumann
 # SPDX-License-Identifier: Apache-2.0
+
 manifest:
   self:
     path: workspace
 
   remotes:
     - name: zephyr-github
-      url-base: https://github.com/zephyrproject-rtos/zephyr.git
+      url-base: https://github.com/zephyrproject-rtos
   projects:
     - name: zephyr
       remote: zephyr-github

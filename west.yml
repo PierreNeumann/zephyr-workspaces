@@ -1,0 +1,69 @@
+# Copyright (c) 2023 Pierre Neumann
+# SPDX-License-Identifier: Apache-2.0
+manifest:
+  self:
+    path: workspace
+
+  remotes:
+    - name: zephyr-github
+      url-base: https://github.com/zephyrproject-rtos/zephyr.git
+  projects:
+    - name: zephyr
+      remote: zephyr-github
+      revision: v3.4-branch
+      import:
+        name-allowlist:
+          # - canopennodefatfs
+          # - chre
+          - cmsis
+          # - edtt
+          # - fatfs
+          # - hal_altera
+          # - hal_atmel
+          # - hal_espressif
+          # - hal_gigadevice
+          # - hal_infineon
+          # - hal_microchip
+          # - hal_nordic
+          # - hal_nuvoton
+          # - hal_nxp
+          # - hal_openisa
+          # - hal_quicklogic
+          # - hal_renesas
+          # - hal_rpi_pico
+          # - hal_silabs
+          - hal_st
+          - hal_stm32
+          # - hal_telink
+          # - hal_ti
+          # - hal_wurthelektronik
+          # - hal_xtensa
+          # - libmetal
+          # - liblc3
+          - littlefs
+          # - loramac-node
+          # - lvgl
+          # - lz4
+          - mbedtls
+          - mcuboot
+          # - mipi-sys-t
+          - nanopb
+          # - net-tools
+          # - nrf_hw_models
+          # - open-amp
+          # - openthread
+          # - picolibc
+          # - segger
+          # - sof
+          # - tflite-micro
+          # - tinycbor
+          - tinycrypt
+          # - TraceRecorderSource
+          - trusted-firmware-m
+          # - trusted-firmware-a
+          # - tf-m-tests
+          # - psa-arch-tests
+          # - uoscore-uedhoc
+          # - zcbor
+          # - zscilib
+
